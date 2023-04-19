@@ -1,0 +1,13 @@
+cd mysql
+docker build -t test_mysql:0.1 .
+docker images
+docker run --name=test_mysql_container2 --publish 6603:3306 test_mysql:0.1
+xóa lôiix: 
+docker ps
+docker stop 715
+docker ps #kiem tra xem co may ao nao dang chay k
+docker compose up
+docker compose up -d started xong se thoat ra
+cd mysql_api
+python
+import mysql
